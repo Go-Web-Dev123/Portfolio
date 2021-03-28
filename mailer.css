@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin-left: 50px;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: black;
+    color: white;
+}
+*::selection{
+    color: black;
+  background: #FFEBCDE0;
+}
+.sent-notification{
+    color: white;
+    position: absolute;
+    top: 78%;
+    left: 18%;
+    z-index: 2;
+    font-size: medium;
+}
+#s3::after{
+    content: "";
+    display: grid;
+    height: 1px;
+    width: 100px;
+    background: blanchedalmond;
+    margin-top: 3px;
+}
+#options{
+    margin-left: 40px;
+    display: flex;
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+#firstimg{
+    position: fixed;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+#overlay{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.7;
+    z-index: 1;
+}
+.sections{
+    letter-spacing: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;   
+}
+.sections:hover{
+    transform: scale(1.3);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: #FFEBCDE0;
+}
+#design{
+    width: 25px;
+    height: 600px;
+    position: fixed;
+    background: white;
+    z-index: 2;
+    top: 10%;
+    border-radius: 10px;
+    left: -5px;
+}
+#myform{
+    position: absolute;
+    z-index: 2;
+    top: 15%;
+}
+label{
+    font-size: larger;
+    margin: 20px;
+}
+input{
+    width: 470px;
+    border: none;
+    background:white;
+    height: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: 600;
+    padding: 10px;
+}
+input:focus{
+    outline: none;
+    border: none;
+   
+
+    
+}
+input[type=email]{
+    margin-left: 30px;
+}
+input[type=text]{
+    margin-left: 27px;
+}
+input[type=subject]{
+    margin-left:15px
+}
+textarea{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: larger;
+    font-weight: 600;
+}
+textarea:focus{
+    outline: none;
+    
+}
+button{
+    width: 200px;
+    height: 50px;
+    margin-left: 180px;
+    font-size: larger;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: #FFEBCDE0;
+    outline: none;
+    border:none;
+}
+button:hover{
+    transform: scale(1.1);
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fa {
+    z-index: 2;
+    padding: 80px;
+    font-size: 60px;
+    
+    transform: scale(3);
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  
+  .fa-facebook{
+    width: 50px;
+    margin: 40px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+      color: white;
+  }
+  
+  .fa-facebook:hover {
+    color: #4267B2;
+    transform: scale(4);
+  }
+  .fa-twitter {
+    width: 50px;
+    margin: 40px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+      left: 70%;
+      transform: scale(3.2);
+    color: white;
+  }
+  .fa-twitter:hover{
+      color: #1DA1F2;
+      transform: scale(4.2);
+  }
+  .fa-linkedin {
+    width: 50px;
+    margin: 40px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+      left: 80%;
+    color: white;
+  }
+  .fa-linkedin:hover{
+      color: #2867B2;
+      transform: scale(4);
+  }
+  #sech{
+      position: absolute;
+      color: #FFEBCDE0;
+      z-index: 1;
+      left: 63%;
+      top: 43%;
+  }
+  
+@media (min-aspect-ratio:16/9){
+    .sent-notification{
+        top: 90%;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    #myform{
+        top: 20%;
+    }
+    input{
+        width: auto;
+    }
+    textarea{
+        margin-top: 10px;
+        width: auto;
+    }
+    button{
+        margin-left: 80px;
+        margin-bottom: 100px;
+    }
+    .sent-notification{
+        top: 97%;
+        left: 7%;
+    }
+    #sech{
+        position: absolute;
+        margin-top: 99%;
+        left: 20%;
+    }
+
+    .fa-facebook{
+        position: relative;
+        margin-top: 720px;
+        left: 0%;
+        
+    }
+    .fa-twitter{
+        position: relative;
+        margin-top: 720px;
+        left: 4%;
+        
+    }
+    .fa-linkedin{
+        position: relative;
+        margin-top: 720px;
+        left: 8%;
+        
+    }
+    
+}
